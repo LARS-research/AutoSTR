@@ -1,0 +1,22 @@
+train_data_dir: '/home/yaoquanming/local_datasets/ALL_REC_DATA'
+test_data_dir: '/home/yaoquanming/local_datasets/recognition_test_sets/IIIT5K_3000'
+batch_size: 1024
+workers: 8
+voc_type: 'ALLCASES_SYMBOLS'
+arch: 'CompactRecBackbone'
+with_lstm: True
+logs_dir: 'logs/proxyless/IIIT5K/compact_seed_1996_addreg3'
+real_logs_dir: 'real_logs/proxyless/IIIT5K/compact_seed_1996_addreg3'
+max_len: 100
+STN_ON: True
+tps_inputsize: [32, 64]
+tps_outputsize: [32, 100]
+tps_margins: [0.05, 0.05]
+tps_activation: None
+num_control_points: 20
+epochs: 12
+milestones: '[7,10]'
+optimizer_type: 'adadelta'
+lr: 1.0
+stride_stages: '[(2, 2), (2, 1), (2, 2), (2, 1), (2, 1)]'
+conv_op_ids: '[2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 4, 1, 1, 6, 6]'

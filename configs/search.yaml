@@ -1,0 +1,21 @@
+train_data_dir: '/home/zhui/local_datasets/ALL_REC_DATA'
+eval_data_dir: ['/home/zhui/local_datasets/original_imgs/IIIT5K/IIIT5K_TRAIN.lmdb', '/home/zhui/local_datasets/original_imgs/cocotrain_42659.lmdb']
+batch_size: 1024
+workers: 8
+voc_type: 'ALLCASES_SYMBOLS'
+arch: 'ProxylessBackbone'
+logs_dir: 'logs/proxyless/IIIT5K/seed_1996_3'
+real_logs_dir: 'real_logs/proxyless/IIIT5K/seed_1996_3'
+max_len: 100
+STN_ON: True
+tps_inputsize: [32, 64]
+tps_outputsize: [32, 100]
+tps_margins: [0.05, 0.05]
+tps_activation: None
+num_control_points: 20
+epochs: 20
+seed: 1996
+update_arch_param_every: 5
+grid_update_step: 1
+warmup_epoch: 1
+stride_stages: '[(2, 2), (2, 1), (2, 2), (2, 1), (2, 1)]'

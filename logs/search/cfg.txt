@@ -1,0 +1,80 @@
+synthetic_train_data_dir: ['/share/zhui/reg_dataset/NIPS2014']
+real_train_data_dir: /data/zhui/benchmark/cocotext_trainval
+extra_train_data_dir: ['/share/zhui/reg_dataset/CVPR2016']
+test_data_dir: /share/zhui/reg_dataset/IIIT5K_3000
+train_data_dir: /home/yaoquanming/local_datasets/ALL_REC_DATA
+eval_data_dir: ['/home/yaoquanming/local_datasets/original_imgs/IIIT5K/IIIT5K_TRAIN.lmdb', '/home/yaoquanming/local_datasets/original_imgs/cocotrain_42659.lmdb']
+MULTI_TRAINDATA: False
+batch_size: 1024
+workers: 8
+height: 64
+width: 256
+keep_ratio: False
+voc_type: ALLCASES_SYMBOLS
+mix_data: False
+num_train: inf
+num_test: inf
+num_eval: inf
+aug: False
+lexicon_type: 0
+image_path: 
+tps_inputsize: [32, 64]
+tps_outputsize: [32, 100]
+arch: ProxylessBackbone
+dropout: 0.5
+max_len: 100
+n_group: 1
+STN_ON: True
+tps_margins: [0.05, 0.05]
+stn_activation: none
+num_control_points: 20
+stn_with_dropout: False
+with_lstm: False
+decoder_sdim: 512
+attDim: 512
+lr: 1
+momentum: 0.9
+weight_decay: 0.0
+grad_clip: 1.0
+loss_weights: [1, 1, 1]
+resume: 
+remap_supernet_file: 
+evaluate: False
+epochs: 20
+milestones: [4,5]
+start_save: 0
+seed: 1996
+print_freq: 100
+cuda: True
+evaluation_metric: accuracy
+evaluate_with_lexicon: False
+beam_width: 5
+logs_dir: logs/proxyless/IIIT5K/seed_1996_addreg3
+real_logs_dir: real_logs/proxyless/IIIT5K/seed_1996_addreg3
+debug: False
+vis_dir: 
+run_on_remote: False
+nas_config_file: 
+n_max_samples: -1
+network_id: -1
+path_configs_file: /home/zhui/ProxylessNAS/autoOCR/path_configs/all_paths.pkl.v1
+config_file: configs/proxyless/IIIT5K/seed_1996_add_flops_reg_3.yaml
+optimizer_type: adadelta
+path: 
+op_choices: 
+local_rank: 0
+opt_level: O0
+remove_skip: False
+update_arch_param_every: 5
+grid_update_step: 1
+warmup_up: 1
+binary_mode: full_v2
+add_flops_regularization_loss: True
+flops_reg_alpha: 1.0
+flops_reg_belta: 0.6
+flops_ref_value: 450000000
+conv_op_ids: 
+stride_stages: [(2, 2), (2, 1), (2, 2), (2, 1), (2, 1)]
+n_cell_stages: 
+tps_activation: None
+warmup_epoch: 1
