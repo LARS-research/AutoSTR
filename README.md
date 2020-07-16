@@ -1,6 +1,6 @@
 # AutoSTR: Efficient Backbone Search for  Scene Text Recognition
 
-We investigate how to obtain a strong feature sequence extractor for scene text recognition task by neural architecture search technology. The research paper can be found [here][https://arxiv.org/pdf/2003.06567.pdf]
+We investigate how to obtain a strong feature sequence extractor for scene text recognition task by neural architecture search technology. The research paper can be found [here](https://arxiv.org/pdf/2003.06567.pdf)
 
 ![overview](./images/general_structure.png)
 
