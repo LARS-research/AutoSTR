@@ -1,6 +1,6 @@
 # AutoSTR: Efficient Backbone Search for  Scene Text Recognition
 
-We investigate how to obtain a strong feature sequence extractor for scene text recognition task by neural architecture search technology. The research paper can be found [here](https://arxiv.org/pdf/2003.06567.pdf)
+We investigate how to obtain a strong feature sequence extractor for scene text recognition task by neural architecture search technology. The research paper can be found [here](https://arxiv.org/pdf/2003.06567.pdf) ECCV. 2020.
 
 ![overview](./images/general_structure.png)
 
@@ -50,3 +50,6 @@ If you find this work helpful for your research, please cite the following paper
 ## Acknowledgement
 
 We used the code part from aster.pytorch (https://github.com/ayumiymk/aster.pytorch) and proxylessnas(https://github.com/mit-han-lab/proxylessnas). Thanks for their excellent work very much.
+
+## New Opportunities
+- Interns, research assistants, and researcher positions are available. See [requirement](http://www.cse.ust.hk/~qyaoaa/pages/job-ad.pdf)
