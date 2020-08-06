@@ -46,6 +46,14 @@ If you find this work helpful for your research, please cite the following paper
   year={2020}
 }
 ```
+```
+@TechReport{yao2018taking,
+  author      = {Yao, Quanming and Wang, Mengshuo},
+  institution = {arXiv preprint},
+  title       = {Taking Human out of Learning Applications: A Survey on Automated Machine Learning},
+  year        = {2018},
+}
+```
 
 ## Acknowledgement
 
